@@ -75,7 +75,9 @@ public class PlatformJobService extends JobService {
 
                 } finally {
                     // do not reschedule
-                    jobFinished(params, false);
+                    if (params != null) {
+                        jobFinished(params, false);
+                    }
                 }
             }
         });
