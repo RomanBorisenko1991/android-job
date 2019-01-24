@@ -1,7 +1,4 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.ben-manes.versions'
-
-archivesBaseName = 'android-job'
 
 dependencies {
     compileOnly "com.google.android.gms:play-services-gcm:$playServicesVersion"

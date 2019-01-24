@@ -51,5 +51,3 @@ dependencies {
 
     gcmImplementation "com.google.android.gms:play-services-gcm:$playServicesVersion"
 }
-
-uploadArchives.enabled false
