@@ -76,7 +76,11 @@ public class PlatformJobService extends JobService {
                 } finally {
                     // do not reschedule
                     if (params != null) {
-                        jobFinished(params, false);
+                        try {
+                            jobFinished(params, false);
+                        } catch (NullPointerException exception) {
+                            exception.printStackTrace();
+                        }
                     }
                 }
             }
